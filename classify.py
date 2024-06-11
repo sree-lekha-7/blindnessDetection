@@ -2,7 +2,7 @@ import pandas as pd import os
 import shutil
 excel_file_path = r'C:\Users\mnsle\Downloads\aptos2019-blindness-detection\train.xlsx' source_folder = r'C:\Users\mnsle\Downloads\aptos2019-blindness-detection\train_images' destination_folder = r'C:\Users\mnsle\Downloads\aptos2019-blindness-detection\0'
 df = pd.read_excel(excel_file_path) num_categories = 4
-for index, row in df.iterrows(): 
+for index, row in df.iterrows():
   image_name = row['Image'] 
   category = row['Category']
   if 0 <= category <= num_categories:
